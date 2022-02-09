@@ -575,7 +575,7 @@ class Camera(Sensor):
             self.depth_shmem.close()
 
         if self.annotation_shmem:
-            self.logger.debug('Unbinding shmem for annotation: ',
+            self.logger.debug('Unbinding shmem for annotation: '
                               f'{self.annotation_handle}')
             self.annotation_shmem.close()
 
